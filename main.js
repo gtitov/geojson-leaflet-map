@@ -14,7 +14,7 @@ async function getData() {
     return datasets
 }
 
-countries = getData().then(
+getData().then(
     datasets => {
         var countries = datasets[0]
         var cities = datasets[1]
